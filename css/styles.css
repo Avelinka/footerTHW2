@@ -35,6 +35,12 @@ ul {
   list-style: none;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -48,23 +54,21 @@ ul {
   padding: 80px 0;
 }
 
-.footer-logo-wrapper {
-  margin-bottom: 40px;
-}
-
-.footer-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* .footer-img-wrapper {
+  max-width: 335px;
   margin-bottom: 20px;
-}
+  display: flex;
+  justify-content: center;
+} */
 
 .footer-logo {
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
+
 .footer-logo-icon {
   fill: #141414;
 }
@@ -81,7 +85,6 @@ ul {
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-bottom: 40px;
 }
 
 .footer-navigation-link {
@@ -112,6 +115,8 @@ ul {
   border-radius: 10px;
   border: 1px solid #141414;
   color: #141414;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,
@@ -148,9 +153,15 @@ ul {
 
 /* ************************ Mobile and Tablet ************************ */
 @media screen and (max-width: 1279px) {
+  .footer-logo-wrapper {
+    margin-bottom: 40px;
+  }
 }
 /* ************************ Only Mobile ************************ */
 @media screen and (max-width: 767px) {
+  .footer-navigation-list {
+    margin-bottom: 40px;
+  }
 }
 /* ************************ Mobile ************************ */
 @media screen and (min-width: 375px) {
@@ -165,10 +176,45 @@ ul {
     padding-left: 32px;
     padding-right: 32px;
   }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-logo-wrapper {
+    width: 349px;
+  }
+
+  .footer-social-list {
+    justify-content: start;
+  }
+
+  .footer-address-list {
+    text-align: start;
+  }
+
+  .footer-address-item {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+  }
 }
 /* ************************ Desktop ************************ */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+
+  .footer-container {
+    justify-content: start;
+    gap: 166px;
+  }
+
+  .footer-logo-nav-wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 166px;
   }
 }

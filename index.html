@@ -15,17 +15,11 @@
   </head>
   <body>
     <footer class="footer">
-      <div class="container">
-        <div>
+      <div class="container footer-container">
+        <div class="footer-logo-nav-wrapper">
           <div class="footer-logo-wrapper">
-            <picture class="footer-img">
-              <source
-                srcset="
-                  ./img/footer-img-tab-desc.png    1x,
-                  ./img/footer-img-tab-desc@2x.png 2x
-                "
-                media="(min-width: 768px)"
-              />
+            <!-- <div class="footer-img-wrapper"> -->
+            <picture>
               <source
                 srcset="
                   ./img/footer-img-mobile.png    1x,
@@ -33,12 +27,20 @@
                 "
                 media="(max-width: 767px)"
               />
+              <source
+                srcset="
+                  ./img/footer-img-tab-desc.png    1x,
+                  ./img/footer-img-tab-desc@2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
               <img
                 src="./img/footer-img-tab-desc.png"
                 alt="Broccoli picture"
                 width="349"
               />
             </picture>
+            <!-- </div> -->
             <a href="./index.html" class="link footer-logo">
               <svg class="footer-logo-icon" width="16" height="16">
                 <use href="./img/icons.svg#icon-footer-logo"></use>

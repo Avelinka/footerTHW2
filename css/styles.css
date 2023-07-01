@@ -43,7 +43,7 @@ picture {
 }
 
 .container {
-  width: 100%;
+  max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -173,12 +173,6 @@ picture {
   .footer-address-item {
     max-width: 143px;
     margin: 0 auto;
-  }
-}
-/* ************************ Mobile ************************ */
-@media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
   }
 }
 /* ************************ Tablet ************************ */

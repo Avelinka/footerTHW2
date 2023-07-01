@@ -86,9 +86,9 @@ picture {
 
 .footer-navigation-link {
   color: #141414;
+  font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.56px;
-  font-size: 14px;
 }
 
 .footer-social-list {
@@ -213,7 +213,11 @@ picture {
 
   .footer-logo-nav-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 166px;
+  }
+
+  .footer-navigation-list {
+    margin-bottom: 116px;
   }
 }

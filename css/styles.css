@@ -152,12 +152,21 @@ ul {
 }
 /* ************************ Only Mobile ************************ */
 @media screen and (max-width: 767px) {
+  .footer-tab-desc-img {
+    display: none;
+  }
+
   .footer-navigation-list {
     margin-bottom: 40px;
   }
 
   .footer-address-list {
     text-align: center;
+  }
+
+  .footer-address-item {
+    max-width: 143px;
+    margin: 0 auto;
   }
 }
 /* ************************ Mobile ************************ */
@@ -180,6 +189,10 @@ ul {
 
   .footer-logo-wrapper {
     width: 349px;
+  }
+
+  .footer-mobile-img {
+    display: none;
   }
 
   .footer-social-list {

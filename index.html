@@ -18,7 +18,27 @@
       <div class="container footer-container">
         <div class="footer-logo-nav-wrapper">
           <div class="footer-logo-wrapper">
-            <picture>
+            <img
+              class="footer-mobile-img"
+              srcset="
+                ./img/footer-img-mobile.png    1x,
+                ./img/footer-img-mobile@2x.png 2x
+              "
+              src="./img/footer-img-mobile.png"
+              alt="Broccoli"
+              width="335"
+            />
+            <img
+              class="footer-tab-desc-img"
+              srcset="
+                ./img/footer-img-tab-desc.png    1x,
+                ./img/footer-img-tab-desc@2x.png 2x
+              "
+              src="./img/footer-img-tab-desc.png"
+              alt="Broccoli"
+              width="349"
+            />
+            <!-- <picture>
               <source
                 srcset="
                   ./img/footer-img-mobile.png    1x,
@@ -38,7 +58,7 @@
                 alt="Broccoli picture"
                 width="349"
               />
-            </picture>
+            </picture> -->
             <a href="./index.html" class="link footer-logo">
               <svg class="footer-logo-icon" width="16" height="16">
                 <use href="./img/icons.svg#icon-footer-logo"></use>

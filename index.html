@@ -14,6 +14,166 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <main>
+      <section class="vegetables">
+        <div class="container">
+          <h2 id="vegetables" class="vegetables-title">Organic vegetables</h2>
+          <p class="vegetables-text">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+          <ul class="list vegetables-list">
+            <li class="vegetables-list-item">
+              <h3 class="vegetables-item-title">Carrot</h3>
+              <p class="vegetables-item-text">Plant</p>
+              <picture>
+                <source
+                  srcset="
+                    ./img/1-carrot-mob.png    1x,
+                    ./img/1-carrot-mob@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/1_carrot_tab_desktop.webp    1x,
+                    ./img/1_carrot_tab_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/1-carrot-mob.png" alt="Carrot" width="295" />
+              </picture>
+              <p class="vegetables-item-price">100 UAH / kg</p>
+            </li>
+            <li class="vegetables-list-item">
+              <h3 class="vegetables-item-title">Brussel sprouts</h3>
+              <p class="vegetables-item-text">Plant</p>
+              <picture>
+                <source
+                  srcset="
+                    ./img/2-brussel-mob.png    1x,
+                    ./img/2-brussel-mob@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/2_brussel_tab_desktop.webp    1x,
+                    ./img/2_brussel_tab_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="./img/2-brussel-mob.png"
+                  alt="Brussels sprouts"
+                  width="295"
+                />
+              </picture>
+              <p class="vegetables-item-price">80 UAH / kg</p>
+            </li>
+            <li class="vegetables-list-item">
+              <h3 class="vegetables-item-title">Tomato</h3>
+              <p class="vegetables-item-text">Plant</p>
+              <picture>
+                <source
+                  srcset="
+                    ./img/3-tomato-mob.png    1x,
+                    ./img/3-tomato-mob@2x.png 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./img/3_tomato_tab_desktop.webp    1x,
+                    ./img/3_tomato_tab_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/3-tomato-mob.png" alt="Tomato" width="295" />
+              </picture>
+              <p class="vegetables-item-price">40 UAH / kg</p>
+            </li>
+            <li class="vegetables-list-item">
+              <h3 class="vegetables-item-title"></h3>
+              <p class="vegetables-item-text"></p>
+              <picture>
+                <source
+                  srcset="./img/.webp 1x, ./img/@2x.webp 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/.webp 1x, ./img/@2x.webp 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="" alt="" width="295" />
+              </picture>
+              <p class="vegetables-item-price"></p>
+            </li>
+            <li class="vegetables-list-item"></li>
+            <li class="vegetables-list-item"></li>
+            <li class="vegetables-list-item"></li>
+            <li class="vegetables-list-item"></li>
+            <li class="vegetables-list-item"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="callyou">
+        <div class="container callyou-container">
+          <div class="callyou-form-box">
+            <h2 id="contacts" class="callyou-title">
+              Fresh harvest box has got you covered
+            </h2>
+            <p class="callyou-text">
+              Our boxes are packed with delicious, nutritious vegetables,
+              perfect for anyone looking to eat healthier or support local
+              farmers. Order your box today and start enjoying the best that
+              nature has to offer!
+            </p>
+            <form class="callyou-form">
+              <label for="user-phone" class="callyou-form-field"></label>
+              <div class="callyou-form-wrapper">
+                <input
+                  id="user-phone"
+                  type="tel"
+                  name="user-phone"
+                  class="callyou-form-input"
+                  placeholder="+380 ()"
+                  required
+                  pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                  title="+111 (11) 111-11-11"
+                />
+                <button type="submit" class="callyou-btn">Recall</button>
+              </div>
+            </form>
+          </div>
+          <div class="callyou-img-box">
+            <picture>
+              <source
+                srcset="./img/s4_girl_mob.webp 1x, ./img/s4_girl_mob@2x.webp 2x"
+                media="(max-width:767px)"
+              />
+              <source
+                srcset="./img/s4_girl_tab.webp 1x, ./img/s4_girl_tab@2x.webp 2x"
+                media="(max-width: 1279px)"
+              />
+              <source
+                srcset="
+                  ./img/s4_girl_desktop.webp    1x,
+                  ./img/s4_girl_desktop@2x.webp 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <img
+                src="./img/s4_girl_tab.webp"
+                alt="Girl with broccoli"
+                width="629"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-nav-wrapper">
@@ -40,22 +200,30 @@
             </div>
             <a href="./index.html" class="link footer-logo">
               <svg class="footer-logo-icon" width="16" height="16">
-                <use href="./img/project-brain-waves-icons.svg#logo"></use>
+                <use href="./img/icons.svg#icon-logo"></use>
               </svg>
               <span class="footer-logo-text">Veggieboost</span>
             </a>
           </div>
-          <ul class="list footer-navigation-list">
-            <li>
-              <a href="" class="link footer-navigation-link">How It Works</a>
-            </li>
-            <li>
-              <a href="" class="link footer-navigation-link">Vegetables</a>
-            </li>
-            <li>
-              <a href="" class="link footer-navigation-link">Contacts</a>
-            </li>
-          </ul>
+          <nav>
+            <ul class="list footer-navigation-list">
+              <li>
+                <a href="#howitworks" class="link footer-navigation-link"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a href="#vegetables" class="link footer-navigation-link"
+                  >Vegetables</a
+                >
+              </li>
+              <li>
+                <a href="#contacts" class="link footer-navigation-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
         <div>
           <ul class="list footer-social-list">
@@ -67,9 +235,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="24" height="24">
-                  <use
-                    href="./img/project-brain-waves-icons.svg#facebook"
-                  ></use>
+                  <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -81,9 +247,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="24" height="24">
-                  <use
-                    href="./img/project-brain-waves-icons.svg#instagram"
-                  ></use>
+                  <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
@@ -95,7 +259,7 @@
                 rel="noopener noreferrer"
               >
                 <svg class="footer-social-icon" width="24" height="24">
-                  <use href="./img/project-brain-waves-icons.svg#youtube"></use>
+                  <use href="./img/icons.svg#icon-youtube"></use>
                 </svg>
               </a>
             </li>

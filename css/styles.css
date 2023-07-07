@@ -104,6 +104,109 @@ button {
   padding: 0 20px;
 }
 /*====================MAIN====================*/
+/*====================HERO====================*/
+.hero {
+  padding-top: 48px;
+  padding-bottom: 20px;
+  background-color: var(--green-color);
+}
+/*====================END HERO====================*/
+/*====================HOWITWORKS====================*/
+.howitworks {
+  padding: 80px 0;
+}
+
+.howitworks-title-wrapper {
+  margin-bottom: 80px;
+}
+
+.howitworks-title-box {
+  margin-bottom: 20px;
+}
+
+.howitworks-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.howitworks-reason-box {
+  display: flex;
+}
+
+.howitworks-reason-text {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+
+.howitworks-list-wrapper {
+  background-color: var(--lite-orange-color);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  border-radius: 40px;
+  padding: 40px 20px 0;
+}
+
+.howitworks-list {
+  margin-bottom: 20px;
+}
+
+.howitworks-list-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.howitworks-list-item {
+  position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+  padding-left: 54px;
+  max-width: 230px;
+  counter-increment: list-counter;
+}
+
+.howitworks-list-item:nth-child(-n + 2) {
+  margin-bottom: 20px;
+}
+
+.howitworks-list-item::before {
+  content: counter(list-counter);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 40px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  color: var(--black-color);
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: -0.72px;
+}
+
+.howitworks-list-img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 258px;
+  height: 319px;
+  margin: 0 auto;
+}
+/*====================END HOWITWORKS====================*/
 /*====================VEGETABLES====================*/
 .vegetables {
   padding-bottom: 80px;
@@ -133,7 +236,6 @@ button {
 }
 
 .vegetables-list-item {
-  height: 443px;
   border-radius: 20px;
   background-color: var(--lite-green-color);
 }
@@ -260,6 +362,7 @@ button {
 .callyou-img-box {
   background-color: var(--lite-orange-color);
   background-repeat: no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -398,386 +501,10 @@ button {
 }
 /*====================END FOOTER====================*/
 
-/* ************************ Mobile and Tablet ************************ */
-@media screen and (max-width: 1279px) {
-  /*====================VEGETABLES====================*/
-  .vegetables-list-item:last-child {
-    display: none;
-  }
-
-  .vegetables-img {
-    left: 0;
-  }
-  /*====================END VEGETABLES====================*/
-  /*====================CALLYOU====================*/
-  .callyou-title {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .callyou-text {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .callyou-img-box {
-    background-position: 31px 0;
-    max-width: 100%;
-  }
-  /*====================END CALLYOU====================*/
-  /*====================FOOTER====================*/
-  .footer-container {
-    justify-content: space-between;
-  }
-
-  .footer-logo-wrapper {
-    margin-bottom: 40px;
-  }
-  /*====================END FOOTER====================*/
-}
-
-/* ************************ Only Mobile ************************ */
-@media screen and (max-width: 767px) {
-  /*====================VEGETABLES====================*/
-  .vegetables-list {
-    flex-direction: column;
-    max-width: 335px;
-    margin-bottom: 20px;
-  }
-
-  .vegetables-list-item {
-    width: 100%;
-    padding: 40px 20px 20px;
-  }
-
-  .vegetables-item-title {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.96px;
-  }
-
-  .vegetables-item-text {
-    margin-bottom: 40px;
-  }
-
-  .vegetables-img-wrapper {
-    height: 249px;
-    margin-bottom: 22px;
-  }
-
-  .vegetables-btn {
-    width: 80px;
-    height: 80px;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.56px;
-  }
-
-  .vegetables-btn-icon {
-    bottom: 26px;
-    left: 7px;
-  }
-
-  .vegetables-btn-text {
-    right: 10px;
-    bottom: 31px;
-  }
-  /*====================END VEGETABLES====================*/
-  /*====================CALLYOU====================*/
-  .callyou {
-    padding-bottom: 80px;
-  }
-
-  .callyou-form-box {
-    margin-bottom: 40px;
-  }
-
-  .callyou-title {
-    max-width: 300px;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.96px;
-  }
-
-  .callyou-text {
-    max-width: 320px;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.56px;
-  }
-
-  .callyou-form-input {
-    width: 100%;
-  }
-
-  .callyou-img-box {
-    padding-top: 31px;
-    border-radius: 40px;
-    background-image: url(../img/bg-dots-mob.png);
-  }
-  /*====================END CALLYOU====================*/
-  /*====================FOOTER====================*/
-  .footer-logo-nav-wrapper {
-    margin-bottom: 40px;
-  }
-
-  .footer-img-wrapper {
-    max-width: 335px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer-address-list {
-    text-align: center;
-  }
-
-  .footer-address-item {
-    max-width: 143px;
-    margin: 0 auto;
-  }
-  /*====================END FOOTER====================*/
-}
-
-/* ************************ Tablet ************************ */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  /*====================VEGETABLES====================*/
-  .vegetables {
-    padding-bottom: 100px;
-  }
-
-  .vegetables-title {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -1.12px;
-  }
-
-  .vegetables-text {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.72px;
-    width: 562px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .vegetables-list {
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-  }
-
-  .vegetables-list-item {
-    width: 342px;
-    height: 465px;
-    padding: 64px 24px 24px;
-  }
-
-  .vegetables-item-title {
-    font-size: 28px;
-    line-height: 32px;
-    letter-spacing: -1.12px;
-  }
-
-  .vegetables-item-text {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.36px;
-  }
-
-  .vegetables-img-wrapper {
-    height: 251px;
-    margin-bottom: 38px;
-  }
-
-  .vegetables-item-price {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.72px;
-  }
-
-  .vegetables-btn {
-    width: 114px;
-    height: 114px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.72px;
-  }
-
-  .vegetables-btn-icon {
-    left: 18px;
-    bottom: 39px;
-  }
-
-  .vegetables-btn-text {
-    right: 19px;
-    bottom: 46px;
-  }
-
-  /*====================END VEGETABLES====================*/
-  /*====================CALLYOU====================*/
-  .callyou {
-    padding-bottom: 172px;
-  }
-
-  .callyou-form-box {
-    margin-bottom: 80px;
-  }
-
-  .callyou-title {
-    width: 524px;
-    font-size: 40px;
-    line-height: 44px;
-    letter-spacing: -1.6px;
-  }
-
-  .callyou-text {
-    width: 499px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.72px;
-  }
-
-  .callyou-form {
-    width: 355px;
-    margin: 0 auto;
-  }
-
-  .callyou-img-box {
-    padding-top: 17px;
-    border-radius: 80px;
-    background-image: url(../img/bg-dots-tab.png);
-  }
-  /*====================END CALLYOU====================*/
-  /*====================FOOTER====================*/
-  .footer-container {
-    display: flex;
-  }
-
-  .footer-logo-wrapper {
-    width: 349px;
-  }
-
-  .footer-social-list {
-    justify-content: start;
-  }
-
-  .footer-address-item {
-    max-width: 184px;
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: -0.36px;
-  }
-  /*====================END FOOTER====================*/
-}
-
-/* ************************ Desktop ************************ */
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-  /*====================VEGETABLES====================*/
-  .vegetables {
-    padding-bottom: 124px;
-  }
-
-  .vegetables-title {
-    font-size: 40px;
-    line-height: 44px;
-    letter-spacing: -1.6px;
-  }
-
-  .vegetables-list {
-    gap: 24px;
-  }
-
-  .vegetables-list-item {
-    width: 389px;
-    height: 465px;
-  }
-
-  .vegetables-item-title {
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: -1.28px;
-  }
-
-  .vegetables-img-wrapper {
-    margin-bottom: 32px;
-  }
-
-  .vegetables-img {
-    left: 23px;
-  }
-  /*====================END VEGETABLES====================*/
-  /*====================CALLYOU====================*/
-  .callyou {
-    padding-bottom: 124px;
-  }
-
-  .callyou-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .callyou-form-box {
-    margin-bottom: 0;
-  }
-
-  .callyou-title {
-    width: 600px;
-    font-size: 48px;
-    line-height: 50px;
-    letter-spacing: -1.92px;
-    margin-bottom: 40px;
-  }
-
-  .callyou-text {
-    width: 524px;
-    margin-bottom: 80px;
-  }
-
-  .callyou-form {
-    margin: 0;
-  }
-  .callyou-img-box {
-    width: 525px;
-    padding-top: 37px;
-    background-image: url(../img/bg-dots-desktop.png);
-    background-position: center;
-    background-size: cover;
-  }
-
-  /*====================END CALLYOU====================*/
-  /*====================FOOTER====================*/
-  .footer-container {
-    gap: 166px;
-  }
-
-  .footer-logo-nav-wrapper {
-    display: flex;
-
-    align-items: flex-end;
-    gap: 166px;
-  }
-
-  .footer-navigation-list {
-    margin-bottom: 116px;
-  }
-  /*====================END FOOTER====================*/
-}
 /* ========================================================= */
 /* ========================================================= */
-/* ========================================================= */
-/* ========================================================= */
-/* ========================================================= */
-/* ========================================================= */
+
+/*====================MODAL====================*/
 .backdrop {
   position: fixed;
   top: 0;
@@ -830,7 +557,6 @@ button {
 
 .modal-title {
   margin-bottom: 40px;
-
   font-size: 28px;
   font-weight: 500;
   line-height: 28px;
@@ -955,134 +681,4 @@ button {
 .modal-send-btn:focus {
   background-color: var(--hero-green-tee);
 }
-
-/* ===================================ONLY MOBILE========= */
-@media screen and (max-width: 767px) {
-  .modal {
-    max-width: 335px;
-    width: 100%;
-    padding: 20px 20px;
-  }
-
-  .modal-girl-img {
-    display: none;
-  }
-
-  .modal-check-wrapper {
-    flex-direction: column;
-  }
-
-  .modal-form-check {
-    max-width: 295px;
-  }
-
-  .modal-check-img {
-    right: 30px;
-    bottom: 8px;
-    width: 94px;
-    height: 78px;
-  }
-}
-
-/* ===================================TABLET========= */
-@media screen and (min-width: 768px) {
-  .modal {
-    width: 704px;
-    padding: 40px 40px;
-  }
-
-  .modal-girl-img {
-    position: absolute;
-    border-radius: 20px;
-    overflow: hidden;
-    right: 0;
-    bottom: 0;
-  }
-
-  .modal-close-btn {
-    width: 28px;
-    height: 28px;
-  }
-
-  .modal-close-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-  .modal-title {
-    font-size: 40px;
-    line-height: 44px;
-    letter-spacing: -1.6px;
-  }
-
-  .modal-form-check {
-    width: 200px;
-    height: 250px;
-    padding-top: 40px;
-  }
-
-  .item-check {
-    width: 20px;
-    height: 20px;
-  }
-
-  .icon-check {
-    width: 8px;
-    height: 8px;
-  }
-
-  .modal-check-img {
-    right: 14px;
-    bottom: 14px;
-    width: 172px;
-    height: 142px;
-  }
-
-  .modal-inputs-wrapper {
-    width: 360px;
-  }
-
-  .modal-input-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .modal-input {
-    height: 48px;
-  }
-
-  .modal-comment {
-    height: 145px;
-  }
-
-  .modal-send-btn {
-    width: 114px;
-    height: 48px;
-  }
-}
-
-/* ===================================DESKTOP========= */
-@media screen and (min-width: 1280px) {
-  .modal {
-    width: 891px;
-  }
-
-  .modal-girl-img {
-    right: 7px;
-  }
-
-  .modal-check-wrapper {
-    gap: 20px;
-  }
-
-  .modal-form-check {
-    width: 257px;
-    height: 308px;
-  }
-
-  .modal-check-img {
-    width: 243px;
-    height: 200px;
-    right: 7px;
-  }
-}
+/*====================END MODAL====================*/

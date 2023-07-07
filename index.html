@@ -12,9 +12,115 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">Organic vegetables to your diet today!</h1>
+        </div>
+      </section>
+
+      <section class="howitworks">
+        <div class="container">
+          <div class="howitworks-title-wrapper">
+            <div class="howitworks-title-box">
+              <h2 class="howitworks-title" id="howitworks">
+                To order your vegetable basket, simply follow these easy steps
+              </h2>
+              <picture>
+                <source
+                  srcset="
+                    ./img/hit/1_how_it_works_mob.webp    1x,
+                    ./img/hit/1_how_it_works_mob@2x.webp 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./img/hit/1_how_it_works_tab.webp    1x,
+                    ./img/hit/1_how_it_works_tab@2x.webp 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/hit/1_how_it_works_desktop.webp    1x,
+                    ./img/hit/1_how_it_works_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  src="./img/hit/1_how_it_works_desktop.webp"
+                  alt="Broccoli"
+                  width="410"
+                />
+              </picture>
+            </div>
+            <div class="howitworks-reason-box">
+              <p class="howitworks-reason-text">
+                Our baskets are assembled with care and delivered straight to
+                your doorstep, so you can enjoy the taste of fresh fruit without
+                ever leaving your home.
+              </p>
+              <p class="howitworks-reason-text">
+                Whether you're looking for a healthy snack or a thoughtful gift,
+                our fruit baskets are the perfect choice.
+              </p>
+            </div>
+          </div>
+          <div class="howitworks-list-wrapper">
+            <h3 class="howitworks-list-title">
+              3 easy steps for buying fresh vegetables
+            </h3>
+            <ol class="list howitworks-list">
+              <li class="howitworks-list-item">
+                Just choose the vegetable you want to order by clicking on the
+                checkboxes next to it.
+              </li>
+              <li class="howitworks-list-item">
+                Click on the basket and fill out the form.
+              </li>
+              <li class="howitworks-list-item">
+                Sit back and relax! Your fresh vegetables basket will be
+                delivered.
+              </li>
+            </ol>
+            <div class="howitworks-list-img">
+              <picture>
+                <source
+                  srcset="
+                    ./img/hit/2_how_it_works_mob.png    1x,
+                    ./img/hit/2_how_it_works_mob@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <source
+                  srcset="
+                    ./img/hit/2_how_it_works_tab.webp    1x,
+                    ./img/hit/2_how_it_works_tab@2x.webp 2x
+                  "
+                  media="(max-width: 1279px)"
+                />
+                <source
+                  srcset="
+                    ./img/hit/2_how_it_works_desktop.webp    1x,
+                    ./img/hit/2_how_it_works_desktop@2x.webp 2x
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <img
+                  src="./img/hit/2_how_it_works_desktop.webp"
+                  alt="Smiling little girl with salad"
+                  width="434"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="vegetables">
         <div class="container">
           <h2 id="vegetables" class="vegetables-title">Organic vegetables</h2>
@@ -250,6 +356,7 @@
           </button>
         </div>
       </section>
+
       <section class="callyou">
         <div class="container callyou-container">
           <div class="callyou-form-box">
@@ -306,6 +413,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-nav-wrapper">
@@ -418,20 +526,20 @@
         <picture class="modal-girl-img">
           <source
             srcset="
-              ./img/modal_girl_tab.webp    1x,
-              ./img/modal_girl_tab@2x.webp 2x
+              ./img/modal/modal_girl_tab.webp    1x,
+              ./img/modal/modal_girl_tab@2x.webp 2x
             "
             media="(max-width: 1279px)"
           />
           <source
             srcset="
-              ./img/modal_girl_desktop.webp    1x,
-              ./img/modal_girl_desktop@2x.webp 2x
+              ./img/modal/modal_girl_desktop.webp    1x,
+              ./img/modal/modal_girl_desktop@2x.webp 2x
             "
             media="(min-width: 1280px)"
           />
           <img
-            src="./img/modal_girl_desktop.webp"
+            src="./img/modal/modal_girl_desktop.webp"
             alt="Smiling girl with vegetables"
           />
         </picture>
@@ -462,27 +570,27 @@
                 <picture class="modal-check-img">
                   <source
                     srcset="
-                      ./img/1_modal_mob.webp    1x,
-                      ./img/1_modal_mob@2x.webp 2x
+                      ./img/modal/1_modal_mob.webp    1x,
+                      ./img/modal/1_modal_mob@2x.webp 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./img/1_modal_tab.webp    1x,
-                      ./img/1_modal_tab@2x.webp 2x
+                      ./img/modal/1_modal_tab.webp    1x,
+                      ./img/modal/1_modal_tab@2x.webp 2x
                     "
                     media="(max-width: 1279px)"
                   />
                   <source
                     srcset="
-                      ./img/1_modal_desktop.webp    1x,
-                      ./img/1_modal_desktop@2x.webp 2x
+                      ./img/modal/1_modal_desktop.webp    1x,
+                      ./img/modal/1_modal_desktop@2x.webp 2x
                     "
                     media="(min-width: 1280px)"
                   />
                   <img
-                    src="./img/1_modal_desktop.webp"
+                    src="./img/modal/1_modal_desktop.webp"
                     alt="Cabbage Basket"
                     width="243"
                   />
@@ -514,20 +622,20 @@
                   />
                   <source
                     srcset="
-                      ./img/2_modal_tab.webp    1x,
-                      ./img/2_modal_tab@2x.webp 2x
+                      ./img/modal/2_modal_tab.webp    1x,
+                      ./img/modal/2_modal_tab@2x.webp 2x
                     "
                     media="(max-width: 1279px)"
                   />
                   <source
                     srcset="
-                      ./img/2_modal_desktop.webp    1x,
-                      ./img/2_modal_desktop@2x.webp 2x
+                      ./img/modal/2_modal_desktop.webp    1x,
+                      ./img/modal/2_modal_desktop@2x.webp 2x
                     "
                     media="(min-width: 1280px)"
                   />
                   <img
-                    src="./img/2_modal_desktop.webp"
+                    src="./img/modal/2_modal_desktop.webp"
                     alt="Tomato Basket"
                     width="243"
                   />
@@ -552,27 +660,27 @@
                 <picture class="modal-check-img">
                   <source
                     srcset="
-                      ./img/3_modal_mob.webp    1x,
-                      ./img/3_modal_mob@2x.webp 2x
+                      ./img/modal/3_modal_mob.webp    1x,
+                      ./img/modal/3_modal_mob@2x.webp 2x
                     "
                     media="(max-width: 767px)"
                   />
                   <source
                     srcset="
-                      ./img/3_modal_tab.webp    1x,
-                      ./img/3_modal_tab@2x.webp 2x
+                      ./img/modal/3_modal_tab.webp    1x,
+                      ./img/modal/3_modal_tab@2x.webp 2x
                     "
                     media="(max-width: 1279px)"
                   />
                   <source
                     srcset="
-                      ./img/3_modal_desktop.webp    1x,
-                      ./img/3_modal_desktop@2x.webp 2x
+                      ./img/modal/3_modal_desktop.webp    1x,
+                      ./img/modal/3_modal_desktop@2x.webp 2x
                     "
                     media="(min-width: 1280px)"
                   />
                   <img
-                    src="./img/3_modal_desktop.webp"
+                    src="./img/modal/3_modal_desktop.webp"
                     alt="Vegetables Basket"
                     width="243"
                   />
@@ -589,7 +697,7 @@
                 class="modal-input-item modal-input"
                 placeholder="Enter full name..."
                 pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-                title="Full name must consist of two english words separated by a space."
+                title="Petro Sidorenko"
                 required
               />
             </label>
@@ -599,6 +707,8 @@
                 name="user-email"
                 class="modal-input-item modal-input"
                 placeholder="Enter email..."
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                title="sample@mail.com"
                 required
               />
             </label>
@@ -608,6 +718,8 @@
                 name="user-card"
                 class="modal-input-item modal-input"
                 placeholder="Enter card.."
+                pattern="[0-9]{16}"
+                title="1111111111111111"
                 required
               />
             </label>
@@ -623,6 +735,7 @@
         </form>
       </div>
     </div>
+
     <script type="module" src="./menu-mob.js"></script>
     <script type="module" src="./modal.js"></script>
   </body>
